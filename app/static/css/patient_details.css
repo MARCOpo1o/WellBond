@@ -1,0 +1,79 @@
+/* Reset some default browser styles */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the header */
+header {
+  background-color: #3498db;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Style the student info in the header */
+.student-info {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Center-align the student info */
+.student-info h1, .student-info p {
+  text-align: center;
+}
+
+/* Style the patient profile section */
+.patient-profile {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+/* Style the profile picture */
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Style the patient info */
+.patient-info {
+  flex: 1;
+}
+
+.patient-info h2 {
+  font-size: 24px;
+}
+
+.patient-info p {
+  margin: 5px 0;
+}
+
+/* Style the graphs (you can add your graph styling here) */
+.graphs {
+  margin: 20px;
+}
+
+/* Style the health assessment */
+.health-assessment {
+  margin: 20px;
+}
+
+.health-assessment h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.health-assessment p {
+  margin: 5px 0;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/patient_details.css') }}">
+</head>
+<body>
+    <header>
+        <div class="student-info">
+            <h1>Medical Student</h1>
+            <p>Name: John Doe (Fake Name)</p>
+            <p>School: Medical University</p>
+        </div>
+    </header>
+    <main>
+        <div class="patient-profile">
+            <div class="profile-picture">
+                <img src="{{ url_for('static', filename='images/patient1.jpg') }}" alt="Patient 1">
+            </div>
+            <div class="patient-info">
+                <h2>Patient 1</h2>
+                <p>Name: John Smith</p>
+                <p>Age: 70</p>
+                <p>Contact Information: j.smith@email.com</p>
+                <p>Family Contact: Mary Smith (family@email.com)</p>
+                <p>Recent Voice Memos: Lorem ipsum dolor sit amet...</p>
+            </div>
+        </div>
+        <div class="graphs">
+            <!-- Graphs go here (e.g., Heart Rate, Steps, Blood Pressure, Sleep) -->
+        </div>
+        <div class="health-assessment">
+            <h3>Health Assessment</h3>
+            <p>Overall Health Today (Past Week): 7, 8, 6, 7, 9</p>
+            <p>Do You Think You Need Help (Past Week): Yes, No, Yes, No, No</p>
+        </div>
+    </main>
+</body>
+</html>
