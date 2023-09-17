@@ -1,0 +1,98 @@
+/* Reset some default browser styles */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background image for the body */
+body {
+  background-image: url('background.jpg'); /* Replace 'background.jpg' with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: rgba(52, 152, 219, 0.8);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Style the student info in the header */
+.student-info {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Center-align the student info */
+.student-info h1, .student-info p {
+  text-align: center;
+  color: #333;
+}
+
+/* Style the main content area */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Style the patient boxes */
+.patient-box {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.patient-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the patient images */
+.patient-image {
+  position: relative;
+  overflow: hidden;
+  width: 100px; /* Set the width to your desired size */
+  height: 100px; /* Set the height to your desired size */
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.patient-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+}
+
+
+/* Style the patient info */
+.patient-info {
+  padding: 20px;
+  text-align: left;
+  color: #333;
+}
+
+/* Style the "More Details" button */
+.details-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.details-button:hover {
+  background-color: #2980b9;
+}

@@ -1,13 +1,11 @@
-from flask import render_template, redirect, url_for
-from app import app, db
-from app.models import Elder, Student
+from flask import render_template
+from app import app  # Import the app instance from the __init__.py file
 
 @app.route('/')
 def index():
-    # return render_template('index.html')
-    return "Hello, World!"
+    return render_template('main_page.html')  # Use the correct template name
 
-@app.route('/dashboard')
-def dashboard():
-    # Get data from DB
-    return render_template('dashboard.html')
+# @app.route('/patients')
+# def dashboard():
+#     # Get data from DB (You may want to retrieve data from the database here)
+#     return render_template('main_page.html')  # Use the correct template name
