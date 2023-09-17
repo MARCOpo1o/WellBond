@@ -40,5 +40,4 @@ Welcome to WellBond, a platform that brings pre-health students and elderly indi
 -------
 
 ### Architecture
-
-![Software Architecture](arch.jpg)
+![Alt text](image.png)
