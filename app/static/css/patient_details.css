@@ -1,4 +1,8 @@
 /* Reset some default browser styles */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 body, h1, h2, p {
   margin: 0;
   padding: 0;
@@ -55,13 +59,18 @@ header {
   font-size: 24px;
 }
 
-.patient-info p {
+.patient-info p.patient-details {
   margin: 5px 0;
 }
 
-/* Style the graphs (you can add your graph styling here) */
-.graphs {
-  margin: 20px;
+/* Style the voice memos list */
+.voice-memos {
+  list-style: none;
+  padding-left: 0;
+}
+
+.voice-memos li {
+  padding: 5px 0;
 }
 
 /* Style the health assessment */
@@ -74,6 +83,23 @@ header {
   margin-bottom: 10px;
 }
 
-.health-assessment p {
+.health-assessment p.assessment-details {
   margin: 5px 0;
 }
+
+main {
+  display: flex;
+  justify-content: space-between; /* Separate content and graphs */
+  margin: 20px;
+}
+
+.content {
+  flex: 1; /* Content takes up available space */
+  padding-right: 20px; /* Add some spacing between content and graphs */
+}
+
+.graphs {
+  flex-basis: 30%; /* Specify a fixed width for the graphs */
+}
+
+/* Add additional CSS styles for your graphs as needed */

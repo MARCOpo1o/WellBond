@@ -5,37 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patient Details</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/patient_details.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="student-info">
-            <h1>Medical Student</h1>
-            <p>Name: John Doe (Fake Name)</p>
-            <p>School: Medical University</p>
+            <h1>Student Albert Holmes</h1>
+            <p class="student-name">John Doe</p>
+            <p class="student-school">Harvard Medical School</p>
         </div>
     </header>
     <main>
-        <div class="patient-profile">
-            <div class="profile-picture">
-                <img src="{{ url_for('static', filename='images/patient1.jpg') }}" alt="Patient 1">
+        <div class="content">
+            <div class="patient-profile">
+                <div class="profile-picture">
+                    <img src="{{ url_for('static', filename='images/patient1.jpg') }}" alt="Patient 1">
+                </div>
+                <div class="patient-info">
+                    <h2>Patient 1</h2>
+                    <p class="patient-details">Name: John Smith</p>
+                    <p class="patient-details">Age: 70</p>
+                    <p class="patient-details">Contact Information: j.smith@email.com</p>
+                    <p class="patient-details">Family Contact: Mary Smith (mary@email.com)</p>
+                    <p class="patient-details">Recent Voice Memos:</p>
+                    <ul class="voice-memos">
+                        <!-- Add more voice memos as needed -->
+                    </ul>
+                </div>
             </div>
-            <div class="patient-info">
-                <h2>Patient 1</h2>
-                <p>Name: John Smith</p>
-                <p>Age: 70</p>
-                <p>Contact Information: j.smith@email.com</p>
-                <p>Family Contact: Mary Smith (family@email.com)</p>
-                <p>Recent Voice Memos: Lorem ipsum dolor sit amet...</p>
-            </div>
+<!-- ... (previous HTML content) -->
+
+<!-- ... (previous HTML content) -->
+
+<!-- ... (previous HTML content) -->
+
+<div class="health-assessment">
+  <h3>Health Assessment</h3>
+  <div class="graph">
+    <img src="{{ url_for('static', filename='images/graph5.jpg') }}" alt="Sleep Data Graph" style="background-color: #f2f2f2; width: 400px; height: 200px;">
+</div>
+  <!-- AI Suggestions Section -->
+  <div class="ai-suggestions">
+      <h4>AI Suggestions</h4>
+      <ul>
+          <li class="good-suggestion">
+              <span class="suggestion-icon">&#10004;</span>
+              John has been drinking water well
+          </li>
+          <li class="bad-suggestion">
+              <span class="suggestion-icon">&#10060;</span>
+              John is not getting enough sleep. Consider reaching out to them for support
+          </li>
+          <li class="bad-suggestion">
+              <span class="suggestion-icon">&#10060;</span>
+              Trends indicate high blood pressure. Call John to offer comfort and guidance
+          </li>
+      </ul>
+  </div>
+</div>
+
+<!-- ... (remaining HTML content) -->
+
+
+<!-- ... (remaining HTML content) -->
+
+
+<!-- ... (remaining HTML content) -->
+
         </div>
         <div class="graphs">
-            <!-- Graphs go here (e.g., Heart Rate, Steps, Blood Pressure, Sleep) -->
+          <div class="graph">
+              <img src="{{ url_for('static', filename='images/graph1.jpg') }}" alt="Blood Pressure Graph" style="background-color: #f2f2f2; width: 250px; height: 200px;">
+          </div>
+          <div class="graph">
+              <img src="{{ url_for('static', filename='images/graph2.jpg') }}" alt="Sleep Data Graph" style="background-color: #f2f2f2; width: 250px; height: 200px;">
+          </div>
+          <div class="graph">
+            <img src="{{ url_for('static', filename='images/graph3.jpg') }}" alt="Blood Pressure Graph" style="background-color: #f2f2f2; width: 250px; height: 200px;">
         </div>
-        <div class="health-assessment">
-            <h3>Health Assessment</h3>
-            <p>Overall Health Today (Past Week): 7, 8, 6, 7, 9</p>
-            <p>Do You Think You Need Help (Past Week): Yes, No, Yes, No, No</p>
-        </div>
+      </div>
+      
     </main>
 </body>
 </html>
